@@ -1,0 +1,196 @@
+/* Part A - A Web Table 
+Color Codes: #755c75, #51344d, #8c93a8, #d0c3d0,aa98aa, green, firebrick, white
+Font: Google Font (Poiret One)
+Icons: Font Awesome (check, xmark)
+*/
+
+#webtable thead tr:first-of-type:first-child th:first-of-type:first-child {
+  background-color: white;
+}
+
+#webtable tr:nth-child(even) {
+  background-color: #d0c3d0;
+}
+
+#webtable tr:nth-child(odd) {
+  background-color: #aa98aa;
+}
+
+#webtable thead th {
+  background-color: #51344d;
+  color: white;
+}
+
+#webtable tbody th {
+  background: #755c75;
+  color: white;
+  border-radius: 10em 0em 0em 10em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 85%;
+  text-align: center;
+  font-family: "Poiret One", sans-serif;
+}
+
+#webtable tfoot td {
+  background-color: #8c93a8;
+  color: white;
+}
+
+#webtable tfoot th {
+  background-color: #8c93a8;
+  color: white;
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-xmark {
+  color: firebrick;
+}
+/* Part B - A Navigation
+Color Codes:
+    Visiting links: #ff6666
+    Unvisited links: #ccff66
+    Hovered links: white
+    Search box: #2ec4b6
+    rebeccapurple
+    white
+Font: Google Font (Roboto)
+Icons: Font Awesome (broom-ball,magnifying-glass)
+*/
+.navigationmenu {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+#navigation a:visited {
+  color: var(--visited-link);
+}
+
+#navigation a:link {
+  color: var(--unvisited-link);
+}
+
+#navigation a:hover {
+  color: var(--hover-link);
+}
+
+#navigation i {
+  font-size: 1.5rem;
+}
+
+#navigation a {
+  text-decoration: none;
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+}
+
+#navigation {
+  display: flex;
+  flex-direction: column;
+  --visited-link: #ff6666;
+  --unvisited-link: #ccff66;
+  --hover-link: white;
+  --search-box: #2ec4b6;
+  --nav-color: rebeccapurple;
+  --text-color: white;
+}
+#navigation nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--nav-color);
+  padding: 0.3em;
+  margin-bottom: 1em;
+}
+#navigation div:last-of-type {
+  padding-left: 1.8em;
+}
+
+.fa-broom-ball {
+  color: white;
+}
+
+.fa-magnifying-glass {
+  color: white;
+  font-size: 1em;
+}
+
+#navigation input {
+  background-color: var(--search-box);
+}
+
+/*Part C - A Login Form
+Color Codes
+    Dark Grey general text-color: #373d3f
+    Lighter Grey:#999
+    Lighter Still Grey: #bbb
+    Lightest Grey: #ddd
+    Teal in graient: #00dbde;
+    Pink in Gradient (and hover of hyperlinks): #fc00ff;
+Font: Google Font (Poppins)
+Icons: (facebook-f, twitter/ x-twitter, apple)
+The form must be laid out using either flexbox or grid
+*/
+#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, #00dbde, #fc00ff);
+  font-family: "Poppins", sans-serif;
+  color: #373d3f;
+}
+
+#login > div {
+  width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: white;
+  padding: 3rem;
+  border-radius: 1rem;
+
+  text-align: center;
+}
+.loginform {
+  --text-color: #373d3f;
+}
+
+#login input {
+  width: 12rem;
+}
+
+#login div:first-child:first-of-type {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login h2 {
+  text-indent: 1.3em;
+}
+
+label {
+  text-align: left;
+  margin-right: 30em;
+}
+
+input {
+  border-color: black;
+  border-top: 3em;
+  border-left: 3em;
+  border-right: 3em;
+}
+
+.fa-user {
+  margin-right: 30em;
+}
+.fa-lock {
+  margin-right: 30em;
+}

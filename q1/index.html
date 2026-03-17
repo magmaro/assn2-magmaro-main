@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="styles/reset.css" /> -->
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poiret+One&family=Share+Tech+Mono&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poiret+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap"
+    />
+
+    <title>2430 Assignment 2</title>
+  </head>
+  <body>
+    <h1>Question 1 - Jadyn Hall</h1>
+
+    <section id="webtable">
+      <h2>Part A - A Web Table</h2>
+
+      <table>
+        <colgroup>
+          <col />
+          <col span="2" class="income" />
+          <col span="2" class="expenditures" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Smart Starter</th>
+            <th>Smart Medium</th>
+            <th>Smart Business</th>
+            <th>Smart Deluxe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Storage Space</th>
+            <td>1 GB</td>
+            <td>100 GB</td>
+            <td>1 TB</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <th scope="row">Bandwidth</th>
+            <td>50 GB</td>
+            <td>100 GB</td>
+            <td>150 GB</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <th scope="row">MySQL Databases</th>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <th scope="row">Setup</th>
+            <td>$19.90</td>
+            <td>$12.90</td>
+            <td>free</td>
+            <td>free</td>
+          </tr>
+          <tr>
+            <th scope="row">PHP 8</th>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <th scope="row">Ruby on Rails</th>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">Price per Month</th>
+            <td>$2.90</td>
+            <td>$5.90</td>
+            <td>$9.90</td>
+            <td>$14.90</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="navigation">
+      <h2>Part B - A Navigation</h2>
+
+      <nav>
+        <div class="navigationmenu">
+          <i class="fa-solid fa-broom-ball"></i>
+          <a href="q1/index.html">Home</a>
+          <a href="q1/index.html">Products</a>
+          <a href="q1/index.html">Services</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" />
+          <button>Go</button>
+        </div>
+      </nav>
+    </section>
+
+    <section id="login">
+      <h2>Part C - A Login Form</h2>
+
+      <div>
+        <h3>Login</h3>
+        <form>
+          <label for="username">Username</label>
+          <div>
+            <input id="username" type="text" placeholder="Type your username" />
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <label for="password">Password</label>
+          <div>
+            <input
+              id="password"
+              type="password"
+              placeholder="Type your password"
+            />
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div>
+            <a href="#">Forgot Password?</a>
+            <button type="submit">Login</button>
+          </div>
+          <h3>Or Sign In Using Social</h3>
+          <div>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fab fa-apple"></i>
+          </div>
+          <h3>Or Sign Up With Email</h3>
+          <a href="#">Sign Up</a>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+@import "reset.css";
+/* Profile image styling */
+.profile img {
+  width: 15rem; /* Makes sure the image scales down */
+  max-width: 15rem; /* Limits the max width to 12rem */
+  height: 15rem; /* Keeps the height proportional to the width */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fills the circle without distortion */
+}
+
+.hobby img {
+  width: 100%; /* Makes sure the image scales down */
+  max-width: 12rem; /* Limits the max width to 12rem */
+  height: auto; /* Keeps the height proportional to the width */
+  object-fit: cover;
+}
+
+.maininfo section {
+  display: flex;
+  gap: 10rem;
+  margin-top: 1em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#cv {
+  padding: 3em 7em;
+  line-height: 1.4em;
+}
+
+#cv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21em;
+  height: 12em;
+  background-image: linear-gradient(
+    to bottom right,
+    #ffe0e6 25%,
+    purple 50%,
+    cyan 75%,
+    rgba(232, 235, 255, 0.1)
+  );
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.aboutme {
+  display: flex;
+  gap: 2em;
+}
+
+.maininfo {
+  margin-top: 5em;
+}
+
+.maininfo section h2 {
+  width: 1em;
+}
+
+.aboutme div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  text-align: right;
+}
+
+.fa-watch {
+  width: 1em;
+  height: 1em;
+}
+
+.aboutme h1 {
+  font-weight: bold;
+}
+
+.aboutme > div:first-child > p {
+  color: gray;
+}
+
+#Experience p::first-line {
+  font-weight: bold;
+}
+
+#portfolio {
+  --primarycolor: rgb(70, 85, 105);
+  --secondarycolor: rgb(green);
+  display: flex;
+  padding: 2em 1em;
+  line-height: 1.4em;
+  background-color: var(--primarycolor);
+}
+
+#portfolio aside {
+  width: 20%;
+  text-align: center;
+}
+
+.skills {
+  margin-top: 5em;
+}
+
+h3 {
+  font-weight: bold;
+}
+h2 {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+@keyframes myAnimation {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blueviolet;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: #00ffff;
+  }
+}
+
+h1 {
+  color: black;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+}
